@@ -203,20 +203,18 @@ void TestSumMatrix(int n, int m)
     vector< vector<double> > a;
     a.resize(n, vector<double>(m, 1));
 
-    cout << SumVectorVector(a) << '\t' << Sum(n * m, &a[0][0]) << endl;
+    cout <<"| n: "<<n<<"\t| m: "<<m <<"\t| "<< SumVectorVector(a) << "\t| " << Sum(n * m, &a[0][0]) << "\t|" << endl;
 }
 //-----------------------------------------------------------------------------
 void task_3_main()
 {
     int n, m;
-
-    cout << "n=";
-    cin >> n;
-    cout << "\nm=";
-    cin >> m;
-    cout << "\n";
-
-    TestSumMatrix(n, m);
+    int nm[] = {1, 1, 1, 10, 2, 1, 2, 10, 10, 10};
+    for (int i = 0; i < 5; ++i) {
+        TestSumMatrix(nm[i*2], nm[i*2+1]);
+        cout << endl;
+    }
+    
 }
 //-----------------------------------------------------------------------------
 
@@ -234,7 +232,7 @@ int main() {
             task_2();
             break;
         case 3:
-            task_3();
+            task_3_main();
             break;
         default:
             cout << "Неверный ввод";
