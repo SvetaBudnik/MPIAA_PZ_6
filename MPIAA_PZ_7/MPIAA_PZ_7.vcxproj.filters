@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{f0218de9-dd1b-4183-a669-2738163f455b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -22,6 +25,27 @@
   <ItemGroup>
     <Text Include="output.txt">
       <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="input\1.txt">
+      <Filter>input</Filter>
+    </Text>
+    <Text Include="input\2.txt">
+      <Filter>input</Filter>
+    </Text>
+    <Text Include="input\3.txt">
+      <Filter>input</Filter>
+    </Text>
+    <Text Include="input\4.txt">
+      <Filter>input</Filter>
+    </Text>
+    <Text Include="input\matrix.txt">
+      <Filter>input</Filter>
+    </Text>
+    <Text Include="input\n.txt">
+      <Filter>input</Filter>
+    </Text>
+    <Text Include="input\input.txt">
+      <Filter>input</Filter>
     </Text>
   </ItemGroup>
 </Project>

@@ -33,20 +33,22 @@ public:
 using namespace std;
 
 void task_1() {
-    cout << "¬ведите пары чисел:" << endl;
 
-    fstream out;
+    fstream out, in;
     out.open("output.txt", ios::out);
+    in.open("input/input.txt", ios::in);
     streambuf* _cout = cout.rdbuf();
     cout.rdbuf(out.rdbuf());
+    
 
     int a, b, n, m;
-    cin >> n >> m;
+    in >> n >> m;
 
-    vector<vector<int> > graph{ (unsigned int)n };
+    vector<vector<int> > graph;
+    graph.resize(n);
     for (int i = 0; i < m; ++i)
     {
-        cin >> a >> b;
+        in >> a >> b;
         --a; --b;
         graph[a].push_back(b);
         graph[b].push_back(a);
